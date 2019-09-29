@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>Sistema de funcionários</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <form action="../server/index.php" method="post" class="">
+                    <div class="form-group">
+                        <label for="nomeFunc">Nome do funcionário</label>
+                        <input id="nomeFunc" name="nomeFunc" type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="idadeFunc">Idade do funcionário</label>
+                        <input id="idadeFunc" name="idadeFunc" type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Possui filhos?</label>
+                        <div>
+                            <button type="button" id="filhosTrue" class="btn btn-primary">Sim</button>
+                            <button type="button" id="filhosFalse" class="btn btn-danger">Não</button>               
+                        </div>
+                    </div>
+                    <div class="row botaoAdicionar" style="display:none;">
+                        <div class="col-sm-12">
+                            <button type="button" class="adicionar btn btn-secondary">Adicionar mais um filho</button>
+                        </div>
+                    </div>
+                    <div class="containerFilhos" style="display:none;">
+                        <!-- todos os filhos que ele adicionar aparecerão aqui -->
+                    </div>
+                    <div class="row botaoEnviar" style="display: none;">
+                        <div class="col-sm-12">
+                            <button class="botaoEnviar btn btn-success">Enviar</button>
+                        </div>
+                    </div>
+                </form>                    
+            </div>
+        </div>
+    </div>
+    <script src="plugins/jquery/jquery.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
